@@ -3,7 +3,12 @@
 # 1) Write a function that takes a number of years and converts it to the number of seconds (assume 365 days in a year)
 
 def years_to_seconds(years)
-  # ... your code here ...
+  days_in_year=365
+hours_in_day=24
+minutes_in_hour=60
+seconds_in_minute=60
+
+seconds_in_minute*minutes_in_hour*hours_in_day* days_in_year*years
 end
 
 puts "Problem 1: " + (years_to_seconds(1) == 31536000).to_s
